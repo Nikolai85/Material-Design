@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="304dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewCard"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/textViewCardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/imageViewCard"
+            android:layout_marginLeft="16dp"
+            android:text="@string/titel_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <TextView
+            android:id="@+id/textViewCardText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewCard"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/user_name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonAction"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCardText"
+            android:text="@string/action"
+            android:textColor="?attr/colorPrimary"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonShare"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewCardText"
+            android:layout_marginRight="16dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:tint="@android:color/darker_gray"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonEdit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textViewCardText"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/imageButtonShare"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="@android:color/darker_gray"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
